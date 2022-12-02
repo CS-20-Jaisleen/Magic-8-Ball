@@ -1,18 +1,23 @@
 /* CSS Style Sheet */
 body{
     font-family:'Times New Roman', Times, serif;
-    font-size: large;
+    font-size: 22px;
     text-align: center;
-    width: 50px 50px;
-    margin: auto;
-    border: 50px 50px;
+    margin: 50px 50px;
     padding: 50px 50px;
     background-color: rgb(16, 31, 49);
 }
 
 div{
     margin: 50px 50px;
-    border:100px 0px;
-    padding: 100px 0px;
+    border:50px;
+    padding: 50px 0px;
     background-color: rgba(150, 178, 197, 0.3);
+}
+
+input{
+    width: 600px;
+    font-size: 18px;
+    padding: 5px;
+    border-radius: 5px;
 }
