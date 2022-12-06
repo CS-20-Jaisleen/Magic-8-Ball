@@ -7,31 +7,32 @@ let outputEl = document.getElementById("output");
 let qn = document.getElementById("question").value.toLowerCase();
 
 function imgclicked () {
-let ansRand = Math.random;
-
-if (ansRand < 0.1) {
-      outputEl.innerHTML = "I don't even know";
-} else if (ansRand < 0.2) {
-      outputEl.innerHTML = "Mhm";
-} else if (ansRand < 0.3) {
-      outputEl.innerHTML = "Girl just no";
-} else if (ansRand < 0.4) {
-      outputEl.innerHTML = "You're not concentrating :|";
-} else if (ansRand < 0.5) {
-      outputEl.innerHTML = "Find something else";
-} else if (ansRand < 0.6) {
-      outputEl.innerHTML = "Ooo";
-} else if (ansRand < 0.7) {
-      outputEl.innerHTML = "How am I supposed to know?";
-} else if (ansRand < 0.8) {
-      outputEl.innerHTML = "How am I supposed to know?";
-}else {
-      if (qn === "does the Magic 8 ball work" || qn === "does this 8 ball work") {
-            outputEl.innerHTML = "Does your brain work?";
-      } else if (qn === "do I look pretty" || qn === "am i pretty") {
-            outputEl.innerHTMl = "Not more than me";  
-      }
-} 
+let ansRand = Math.random();
+      if (qn === "---") {
+      outputEl.innerHTML = ansRand;
+            } if (ansRand < 0.35) {
+                  outputEl.innerHTML = "How am I supposed to know?";
+            } else if (ansRand < 0.45) {
+                  outputEl.innerHTML = "Girl just no";
+            } else if (ansRand < 0.55) {
+                  outputEl.innerHTML = "You're not concentrating :|";
+            } else if (ansRand < 0.65) {
+                  outputEl.innerHTML = "Go get a life";
+            } else if (ansRand < 0.75) {
+                  outputEl.innerHTML = "Ooo";
+            } else if (ansRand < 0.9) {
+                  outputEl.innerHTML = "Seek help";
+            } else if (ansRand < 0.95) {
+                  outputEl.innerHTML = "Umm";
+            }else if (ansRand < 0.99) {
+                  outputEl.innerHTML = "Have a great day";
+      }else {
+            if (qn === "does the magic 8 ball work" || qn === "does this 8 ball work") {
+                  outputEl.innerHTML = "Does your brain work?";
+            } else if (qn === "do I look pretty" || qn === "am i pretty") {
+                  outputEl.innerHTMl = "Not more than me";  
+            }
+            } 
 }
 
 // function imgclicked () {
