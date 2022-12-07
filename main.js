@@ -4,9 +4,10 @@ document.getElementById("magicBall-img") .addEventListener("click" , imgclicked)
 
 // VARIABLES
 let outputEl = document.getElementById("output");
-let qn = document.getElementById("question").value.toLowerCase();
+
 
 function imgclicked () {
+let qn = document.getElementById("question").value.toLowerCase();
 let ansRand = Math.random();
       if (qn === "---") {
       outputEl.innerHTML = ansRand;
@@ -20,7 +21,7 @@ let ansRand = Math.random();
                   outputEl.innerHTML = "Go get a life";
             } else if (ansRand < 0.75) {
                   outputEl.innerHTML = "Ooo";
-            } else if (ansRand < 0.9) {
+            } else if (ansRand < 0.85) {
                   outputEl.innerHTML = "Seek help";
             } else if (ansRand < 0.95) {
                   outputEl.innerHTML = "Umm";
