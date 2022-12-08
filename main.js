@@ -32,6 +32,8 @@ let ansRand = Math.random();
                   outputEl.innerHTML = "Does your brain work?";
             } else if (qn === "do I look pretty" || qn === "am i pretty") {
                   outputEl.innerHTMl = "Not more than me";  
+            } else {
+                  outputEl.innerHTML = "Please ask again";
             }
             } 
 }
